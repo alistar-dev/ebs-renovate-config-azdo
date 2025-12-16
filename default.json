@@ -1,16 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Is best-practices without ignoreModulesAndTests; show all confidence badges; removing hourly limit because we run once a day",
+  "description": "Is best-practices; removing hourly limit because we run once a day",
   "extends": [
     "config:best-practices",
-    ":semanticPrefixFixDepsChoreOthers",
-    
-    "group:monorepos",
-    "group:recommended",
-    "replacements:all",
-    "workarounds:all",
-    
-    "mergeConfidence:all-badges",
     ":prHourlyLimitNone"
   ],
   "semanticCommits": "enabled",
